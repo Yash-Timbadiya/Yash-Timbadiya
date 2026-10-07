@@ -1,24 +1,32 @@
-<!-- introduction -->
-<h1 align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hi+There!+👋;+Myself+Yash!;&center=true&size=30">
-  </a>
-</h1>
-
-- 👋 Hi, I’m @Yash-Tibadiya
-- 👀 I’m interested in Web development
-- 🌱 I’m currently learning Devops.
-- 📫 How to reach me - tibadiyayash@gmail.com
-
-📖 I _enjoy_ learning new technologies and new programming languages by making something from scratch step by step as well as working on real-world projects as part of my day-to-day job 🛠
-
 <div align="center">
-    <img width="65%" src="https://raw.githubusercontent.com/ginny100/ginny100/main/assets/quote2.jpeg">
+
+<!-- animated contribution graph: real data, boxes reveal cell by cell
+     (regenerated daily by .github/workflows/update-profile-art.yml) -->
+
+<h3><code>yash@github ~ $ ./contributions.sh</code></h3>
+
+<img src="./assets/contrib-heatmap.svg" width="860" alt="Yash's GitHub contribution graph, auto-refreshed daily" />
+
+<br>
+<br>
+
+<!-- ascii portrait (left) + streak/numbers card (right). both svgs are
+     840x880 so equal widths give equal heights.
+     portrait: python scripts/prep_photo.py && python scripts/make_ascii_svg.py
+     stats:    python scripts/render_stats_svg.py (same daily workflow) -->
+
+<h3><code>yash@github ~ $ whoami</code></h3>
+
+<table>
+<tr>
+<td valign="top"><img src="./assets/ascii-portrait.svg" width="420" alt="Yash Tibadiya, ASCII portrait" /></td>
+<td valign="top"><img src="./assets/stats.svg" width="420" alt="Yash's GitHub streak and contribution stats, auto-refreshed daily" /></td>
+</tr>
+</table>
+
 </div>
 
-<div>
-  <p align="center" style="font-size: 2.5rem">🍀🍀🍀<p>
-</div>
+<br/>
 
 <h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
 <h4 align="center">📖 I have been learning and exploring these following tools and languages</h4>
@@ -51,45 +59,9 @@
 </p>
 <hr />
 
-<!-- stats -->
-<h2 align="center">⚡ Stats ⚡</h2>
-<br />
-<p align=center>
-<!-- first row -->
-  <div align=center>
-  <!-- streak stats -->
-    <a href="https://github.com/Yash-Tibadiya"><img src="https://github-readme-streak-stats-eight.vercel.app/?user=Yash-Tibadiya&theme=react&hide_border=true" alt="GitHub Streak" /></a>
-    
-  <br /><br /><br />
-
-<!-- second row -->
-  <!-- language stats -->
-  <!-- <div align=center>
-    <a href="https://github.com/anuraghazra/github-readme-stats" title="Go to Source">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Yash-Tibadiya&langs_count=8&theme=react&layout=compact&border_color=61dafb&hide_border=true" />
-        <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Yash-Tibadiya&langs_count=8&layout=compact&border_color=61dafb" />
-        <img align="center" width=325 src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yash-Tibadiya&langs_count=8&layout=compact&border_color=61dafb" alt="Yash-Tibadiya's language stats" />
-      </picture>
-    </a>
-  </div> 
-
-  <br /><br /><br /> -->
-  
-  <!-- contribution graph -->
-  <!-- <a href="https://github.com/Ashutosh00710/github-readme-activity-graph" title="Go to Source">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Yash-Tibadiya&theme=react-dark" />
-      <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Yash-Tibadiya&bg_color=ffffff&color=708090&line=24292e&point=24292e&area=true&hide_border=true" />
-      <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Yash-Tibadiya&bg_color=ffffff&color=708090&line=24292e&point=24292e&area=true&hide_border=true" alt="Yash-Tibadiya's contribution graph" />
-    </picture>
-  </a> -->
-</p>
-
-<hr />
-
 ![](https://visitor-badge.laobi.icu/badge?page_id=Yash-Tibadiya.Yash-Tibadiya)
 
+<!-- snake game
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
@@ -104,5 +76,6 @@
     src="https://raw.githubusercontent.com/Yash-Tibadiya/Yash-Tibadiya/output/github-contribution-grid-snake.svg"
   />
 </picture>
+-->
 
 <hr/>
