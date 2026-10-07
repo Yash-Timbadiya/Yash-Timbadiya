@@ -2,8 +2,9 @@
 Convert the prepped portrait into a clean, monochrome ASCII-art SVG inside a
 terminal window that "types" itself in, then holds.
 
-One fill color + a good density ramp + high contrast (so the background washes
-out to blank) reads as neat and legible. GitHub renders SVGs embedded via <img>
+One fill color + a good density ramp reads as neat and legible. Light text on
+a dark card, so bright skin maps to dense characters and dark strokes (glasses,
+eyes, smile) to sparse ones; the alpha mask keeps the background blank. GitHub renders SVGs embedded via <img>
 and runs their SMIL animations (JS does not run). Each row is revealed with a
 left-to-right clip wipe plus a block cursor riding the wipe edge, staggered
 top -> bottom, so the portrait prints once and freezes.
@@ -16,7 +17,7 @@ import html
 import os
 import sys
 
-from PIL import Image, ImageEnhance
+from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "data", "source-prepped.png")
@@ -32,11 +33,9 @@ ART_W = 800
 CELL_W = ART_W / COLS
 CELL_H = CELL_W * 15 / 8
 ROWS = round(COLS * 8 / 15)
-RAMP = " .`:-=+*cs#%@"  # bright(sparse) -> dark(dense); leading space clears bg
+RAMP = " .`:-=+*cs#%@"  # sparse -> dense; index 0 (space) is reserved for background
 
-CONTRAST = 1.05
-GAMMA = 1.18          # >1 brightens mids -> face lands in sparser chars
-WHITE_FLOOR = 0.80    # luminance above this is forced to blank (space)
+GAMMA = 1.3           # >1 darkens mids -> skin stays bright, hair/hoodie recede
 
 PAD = 20
 TITLEBAR_H = 30
@@ -56,21 +55,19 @@ STAGGER = ROW_DUR
 STATIC = bool(os.environ.get("STATIC"))  # emit frozen state for previews
 
 # ---- 1. sample the image into a COLS x ROWS grid ---------------------------
-im = Image.open(SRC).convert("L")
-im = ImageEnhance.Contrast(im).enhance(CONTRAST)
-im = im.resize((COLS, ROWS), Image.LANCZOS)
+im = Image.open(SRC).convert("LA").resize((COLS, ROWS), Image.LANCZOS)
 px = im.load()
 
 rows_txt = []
 for y in range(ROWS):
     chars = []
     for x in range(COLS):
-        lum = pow(px[x, y] / 255.0, GAMMA)
-        if lum >= WHITE_FLOOR:
+        gray, alpha = px[x, y]
+        if alpha < 128:
             chars.append(" ")
             continue
-        idx = int((1.0 - lum) * (len(RAMP) - 1) + 0.5)
-        chars.append(RAMP[max(0, min(len(RAMP) - 1, idx))])
+        lum = pow(gray / 255.0, GAMMA)
+        chars.append(RAMP[1 + int(lum * (len(RAMP) - 2) + 0.5)])
     rows_txt.append("".join(chars))
 
 art_top = TITLEBAR_H + PAD * 0.35
