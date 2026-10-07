@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="482" height="60" viewBox="0 0 482 60" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+<style>
+  .t { fill:#e6edf3; font-size:28px; font-weight:700; }
+  .cur { fill:#39d353; }
+  .hand { font-size:28px; opacity:0; transform-box:fill-box; transform-origin:70% 80%;
+          animation:show .01s linear 2.16s forwards, wave 1.6s ease-in-out 2.26s 2; }
+  @keyframes show { to { opacity:1; } }
+  @keyframes wave { 0%,60%,100% { transform:rotate(0) } 10%,30% { transform:rotate(14deg) } 20% { transform:rotate(-8deg) } 40% { transform:rotate(-4deg) } 50% { transform:rotate(10deg) } }
+  @media (prefers-color-scheme: light) { .t { fill:#1f2328; } .cur { fill:#1a7f37; } }
+  @media (prefers-reduced-motion: reduce) { .hand { opacity:1; animation:none; } }
+</style>
+<clipPath id="type"><rect x="10" y="0" height="60" width="0">
+  <animate attributeName="width" values="0;17;34;51;68;85;102;119;136;153;170;187;204;221;238;255;272;289;306;323;340;357;374;391;408" keyTimes="0.0000;0.0417;0.0833;0.1250;0.1667;0.2083;0.2500;0.2917;0.3333;0.3750;0.4167;0.4583;0.5000;0.5417;0.5833;0.6250;0.6667;0.7083;0.7500;0.7917;0.8333;0.8750;0.9167;0.9583;1.0000" calcMode="discrete" dur="2.16s" fill="freeze"/>
+</rect></clipPath>
+<text class="t" x="10" y="40" textLength="408" lengthAdjust="spacingAndGlyphs" clip-path="url(#type)">Hello, I&#39;m Yash Tibadiya</text>
+<rect class="cur" y="16" width="3" height="30" x="10">
+  <animate attributeName="x" values="10;27;44;61;78;95;112;129;146;163;180;197;214;231;248;265;282;299;316;333;350;367;384;401;418" keyTimes="0.0000;0.0417;0.0833;0.1250;0.1667;0.2083;0.2500;0.2917;0.3333;0.3750;0.4167;0.4583;0.5000;0.5417;0.5833;0.6250;0.6667;0.7083;0.7500;0.7917;0.8333;0.8750;0.9167;0.9583;1.0000" calcMode="discrete" dur="2.16s" fill="freeze"/>
+  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite"/>
+</rect>
+<text class="hand" x="432" y="40">👋</text>
+</svg>
