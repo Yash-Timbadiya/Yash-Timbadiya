@@ -1,21 +1,21 @@
 {
   "username": "Yash-Timbadiya",
-  "generated_at": "2026-10-31T12:41:46Z",
+  "generated_at": "2026-11-01T13:32:20Z",
   "range": {
-    "start": "2025-10-26",
-    "end": "2026-10-31"
+    "start": "2025-11-02",
+    "end": "2026-11-01"
   },
-  "total_contributions": 1337,
+  "total_contributions": 1336,
   "active_days": 250,
   "avg_per_active_day": 5.3,
   "current_streak": {
-    "length": 24,
+    "length": 25,
     "start": "2026-10-07",
-    "end": "2026-10-30"
+    "end": "2026-10-31"
   },
   "longest_streak": {
-    "length": 55,
-    "start": "2025-11-01",
+    "length": 54,
+    "start": "2025-11-02",
     "end": "2025-12-25"
   },
   "best_day": {
@@ -24,12 +24,8 @@
   },
   "monthly": [
     {
-      "month": "2025-10",
-      "total": 0
-    },
-    {
       "month": "2025-11",
-      "total": 86
+      "total": 84
     },
     {
       "month": "2025-12",
@@ -73,45 +69,14 @@
     },
     {
       "month": "2026-10",
-      "total": 196
+      "total": 197
+    },
+    {
+      "month": "2026-11",
+      "total": 0
     }
   ],
   "days": [
-    {
-      "date": "2025-10-26",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-27",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-28",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-29",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-30",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-31",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-01",
-      "count": 2,
-      "level": 1
-    },
     {
       "date": "2025-11-02",
       "count": 5,
@@ -1929,6 +1894,11 @@
     },
     {
       "date": "2026-10-31",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-11-01",
       "count": 0,
       "level": 0
     }
